@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+    /* Typography Declarations */
+    background-color: #CCCC99;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+   text-align: center;
+}
+#container{
+
+}
+#heading{
+background-color: #666633;
+}
+#left-logo{
+	margin-top: 20px;
+
+	}
+.searching{
+	background-color: #CCCC99;
+
+}
+.input{
+	width:800px;
+	height: 30px;
+	background-color: #CDB99C;
+}
+	
+.form_inp{
+	margin-top: 30px;
+	
+	margin-bottom: 15px;
+
+}
+.btn-primary{
+
+background-color: #217C7E;
+width:90px;
+height: 40px;
+font-size: 15px;
+ border-radius: 20px;
+ font-weight: 900;	
+	
+}
+#status-message{
+	margin-top: 10px;
+}
+
+.results{
+	vertical-align: right;
+}
+.thumb {
+	margin-bottom: 30px;
+}
+#results {
+	width: 100%;
+	margin: 0 auto;
+}
+#results li,
+#results li a,
+#results li a img {
+	float: left;
+}
+#error-message,
+#status-message {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.img-responsive{
+	float:right;
+	margin:10px 5px;
+}
+
+.repeat-anim.ng-enter,
+.repeat-anim.ng-leave {
+	        transition: all ease-out 1s;
+	-webkit-transition: all ease-out 1s;
+}
+.repeat-anim.ng-enter-stagger,
+.repeat-anim.ng-leave-stagger {
+	transition-delay: 0.1s;
+	-webkit-transition-delay: 0.1s;
+	transition-duration: 0s;
+	-webkit-transition-duration: 0s;
+
+}
+.repeat-anim.ng-enter,
+.repeat-anim.ng-leave.ng-leave-active {
+	opacity: 0;
+	margin-top: 1em;
+}
+.repeat-anim.ng-enter.ng-enter-active,
+.repeat-anim.ng-leave {
+	opacity: 1;
+	margin-top: 0;
+}
+.input{
+	margin-top: 15px;
+}

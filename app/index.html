@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html  ng-app='myapp'>
+
+  <head lang="en">
+   <meta charset="UTF-8">
+    <title>Instagram searcher</title>
+     
+   
+     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="node_modules/angular-messages/angular-messages.js"></script>
+  <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+    
+    <script src="js/app.js" type="text/javascript" ></script>
+    
+    
+    
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/normalize.css">
+    
+  </head>
+
+  <body ng-controller="MyCtrl">
+   <div id="container">
+  <div id="heading">
+ 
+        <img id="left-logo" src="images/logo.png">
+          </div>
+       <form name="myForm"  role="form" novalidate ng-submit="search()" >
+        
+   <input name="searchField" class="input" type="text"  required ng-model="searchField" placeholder="Enter a tag for search" />
+    <button type="submit" class=" btn-primary" >Submit</button>
+                                
+</div>
+           
+
+           </form>
+           <div id="error-message" ng-Messages="myForm.$submitted && myForm.$error">
+      <p ng-Message="required" class="bad">The above field is required</p>
+    </div>
+            <div id="status-message">
+      <p ng-show="searchDone" class="neutral">Found {{ results.length }} results for {{ lastSearch }}</p>
+      <p ng-show="searching" class="neutral">Searching Instagram for photos tagged with {{ searchField }}</p>
+      <p ng-show="searchFail" class="bad">Oops, something went wrong. Please try again.</p>
+    </div>
+           <div id="results"  class="clearfix" >
+ 
+          <div ng-repeat="entry in results" >
+            
+           
+             <a class="thumbnail" ng-href="{{entry.link}}">
+                        <img class="img-responsive" ng-src="{{ entry.images.low_resolution.url }}" alt="{{ entry.caption.text }}">
+                    </a>
+           </div>
+           </div>
+           
+            
+    
+      
+  </body>
+
+</html>
